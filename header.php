@@ -55,19 +55,17 @@
 		<nav id="access" role="navigation">
 			<div class="menu">
 				<ul>
-					<li class="current_page_item">
-						<a title="Inicio" href="<?php site_url();?>">Inicio</a>
-					</li>
-					<li class="page_item page-item-2">
-						<a href="http://localhost:8888/fundacion/sample-page/"></a>
-					</li>
 					<?php
 					global $post;
 					$args = array('category' => 2 );
 					$myposts = get_posts( $args );
 					foreach( $myposts as $post ) :	setup_postdata($post); ?>
-						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+						<li class="current_page_item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 					<?php endforeach; ?>
+					
+					<li class="page_item page-item-2">
+						<a title="Inicio" href="<?php echo esc_url( home_url( '/wp-admin/' ) ); ?>">Inicio</a>
+					</li>
 				</ul>
 			</div>
 		</nav><!-- #access -->
