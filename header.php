@@ -62,10 +62,14 @@
 					foreach( $myposts as $post ) :	setup_postdata($post); ?>
 						<li class="current_page_item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 					<?php endforeach; ?>
-					
-					<li class="page_item page-item-2">
-						<a title="Inicio" href="<?php echo esc_url( home_url( '/wp-admin/' ) ); ?>">Inicio</a>
+					<li class="current_page_item">
+						<?php
+							wp_list_categories('style=none&include=3');
+						?>
 					</li>
+				<?php /*	<li class="page_item page-item-2">
+						<a title="Inicio" href="<?php echo esc_url( home_url( '/wp-admin/' ) ); ?>">Inicio</a>
+					</li> */ ?>
 				</ul>
 			</div>
 		</nav><!-- #access -->

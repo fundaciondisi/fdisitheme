@@ -588,6 +588,10 @@ a:hover {
 	font-size:85%;
 }
 
+.current_page_item {
+	max-height: 60px;
+}
+
 #access a:hover {
 	text-decoration: underline;
 	
@@ -1722,6 +1726,15 @@ section.recent-posts .other-recent-posts li:after {
 
 /* =Widgets
 ----------------------------------------------- */
+
+#lmenu ul {
+	list-style-type: none;
+}
+
+#lmenu ul li {
+	font-size: 120%;
+	margin: 0 0 10px;
+}
 
 .widget-area {
 	font-size: 12px;
