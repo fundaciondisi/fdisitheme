@@ -15,6 +15,7 @@ if ( 'content' != $current_layout ) :
 		<div id="secondary" class="widget-area" role="complementary">
 
 				<aside id="lmenu" class="widget">
+					<?php if(exite_categoria('Menu latera')==1): ?>
 					<ul>
 						<?php
 							global $post;
@@ -24,6 +25,7 @@ if ( 'content' != $current_layout ) :
 							<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 						<?php endforeach; ?>
 					</ul>
+					<?php endif; ?>
 				</aside>
 			
 				<?php dynamic_sidebar( 'sidebar-1' ); ?>

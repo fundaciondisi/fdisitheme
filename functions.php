@@ -77,6 +77,19 @@ function current_slug() {
 	return $var[0]->slug;
 }
 
+function exite_categoria($cat) {
+	$args = array ('echo'=>0, 'style'=>'none');
+	$lista=wp_list_categories( $args );
+	if (strpos($lista,$cat) )
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
 
 //-------------------------
 
