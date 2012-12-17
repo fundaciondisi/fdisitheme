@@ -519,7 +519,7 @@ a:hover {
 #imagencab{
 	position:absolute;
 	top:55px;
-	left:718px;
+	right: 6%;
 }
 
 
@@ -2216,13 +2216,6 @@ p.comment-form-comment {
 	width:280px;
 }
 
-#errores{
-	float:right;
-	margin: 0px 5px 0px 0px;
-	position:relative;
-	top:-25px;
-}
-
 #info{
 	margin: 0px 0px 0px 5px;
 }
@@ -2500,6 +2493,11 @@ p.comment-form-comment {
 		height: auto;
 	}
 
+	#main #conten img {
+		width: 350px;
+		height: auto;
+	}
+
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	body {
@@ -2510,6 +2508,11 @@ p.comment-form-comment {
 	}
 	#branding {
 		border-top: none;
+	}
+
+	#main #conten img {
+		width: 250px;
+		height: auto;
 	}
 
 }
