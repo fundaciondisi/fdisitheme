@@ -55,6 +55,7 @@
 		<nav id="access" role="navigation">
 			<div class="menu">
 				<ul>
+					<?php if(exite_categoria('menu')==1): ?>
 					<?php
 					global $post;
 					$args = array('category' =>  get_cat_ID('menu'));
@@ -62,13 +63,17 @@
 					foreach( $myposts as $post ) :	setup_postdata($post); ?>
 						<li class="current_page_item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 					<?php endforeach; ?>
+					<?php endif; ?>
+
+					<?php if(exite_categoria('Noticias')==1): ?>
 					<li class="current_page_item">
 						<?php
 							wp_list_categories('style=none&include='.get_cat_ID('Noticias'));
 						?>
 					</li>
+					<?php endif; ?>
 					<li class="page_item page-item">
-						<a title="Moodle" href="<?php echo esc_url( home_url( '/moodle/' ) ); ?>">Moodle</a>
+						<a title="Cursos" href="<?php echo esc_url( home_url( '/moodle/' ) ); ?>">Cursos</a>
 					</li> 
 					<li class="page_item page-item">
 						<a title="Wiki" href="<?php echo esc_url( home_url( '/wiki/' ) ); ?>">Wiki</a>
@@ -86,7 +91,7 @@
 			</a>
 			
 
-			<?php
+			<?php /*
 				// Has the text been hidden?
 				if ( 'blank' == get_header_textcolor() ) :
 			?>
@@ -95,9 +100,9 @@
 				</div>
 			<?php
 				else :
-			?>
+			*/?>
 				<?php get_search_form(); ?>
-			<?php endif; ?>
+			<?php //endif; ?>
 
 			
 	</header><!-- #branding -->
