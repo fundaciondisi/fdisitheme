@@ -2498,6 +2498,10 @@ p.comment-form-comment {
 		height: auto;
 	}
 
+	#imagencab{
+		display: none;
+	}
+
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	body {
@@ -2513,6 +2517,10 @@ p.comment-form-comment {
 	#main #content img {
 		width: 250px;
 		height: auto;
+	}
+
+	#imagencab{
+		display: none;
 	}
 
 }
