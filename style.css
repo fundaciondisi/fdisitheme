@@ -476,6 +476,7 @@ input#s {
 	height: 22px;
 	line-height: 1.2em;
 	padding: 4px 10px 4px 28px;
+	color:#000000;
 }
 input#searchsubmit {
 	display: none;

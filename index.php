@@ -12,6 +12,9 @@
  * @subpackage Twenty_Eleven
  */
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 get_header(); ?>
 
 		<div id="primary">
