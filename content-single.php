@@ -13,7 +13,7 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
-			<?php if(current_slug()!='menu'): ?>
+			<?php if(current_slug()=='noticias'): ?>
 		<div class="entry-meta">
 			<?php twentyeleven_posted_on(); ?>
 		</div><!-- .entry-meta -->
@@ -26,7 +26,7 @@
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 
-<?php if(current_slug()!='menu'): ?>
+<?php if(current_slug()=='noticias'): ?>
 	<footer class="entry-meta">
 		<?php
 			/* translators: used between list items, there is a space after the comma */
