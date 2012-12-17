@@ -24,7 +24,7 @@ get_header(); ?>
 
 
 					<?php 
-					if(current_slug()!='menu')
+					if(current_slug()=='noticias')
 					{
 						comments_template( '', true );
 					}

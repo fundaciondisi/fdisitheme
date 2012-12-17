@@ -531,7 +531,7 @@ a:hover {
 }
 #site-title {
 	margin-right: 270px;
-	padding: 1.65625em 0 0;
+	padding: 1.5em 0 0;
 }
 #site-title a {
 	color: #219F0C;
@@ -581,6 +581,15 @@ a:hover {
 	line-height: 3.333em;
 	padding: 0 1.2125em;
 	text-decoration: none;
+}
+
+.page-item-2 {
+	margin:0.4em;
+	font-size:85%;
+}
+
+.current_page_item {
+	max-height: 60px;
 }
 
 #access a:hover {
@@ -1717,6 +1726,15 @@ section.recent-posts .other-recent-posts li:after {
 
 /* =Widgets
 ----------------------------------------------- */
+
+#lmenu ul {
+	list-style-type: none;
+}
+
+#lmenu ul li {
+	font-size: 120%;
+	margin: 0 0 10px;
+}
 
 .widget-area {
 	font-size: 12px;
