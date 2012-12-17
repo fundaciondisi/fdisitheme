@@ -67,9 +67,12 @@
 							wp_list_categories('style=none&include='.get_cat_ID('Noticias'));
 						?>
 					</li>
-				<?php /*	<li class="page_item page-item-2">
-						<a title="Inicio" href="<?php echo esc_url( home_url( '/wp-admin/' ) ); ?>">Inicio</a>
-					</li> */ ?>
+					<li class="page_item page-item">
+						<a title="Moodle" href="<?php echo esc_url( home_url( '/moodle/' ) ); ?>">Moodle</a>
+					</li> 
+					<li class="page_item page-item">
+						<a title="Wiki" href="<?php echo esc_url( home_url( '/wiki/' ) ); ?>">Wiki</a>
+					</li> 
 				</ul>
 			</div>
 		</nav><!-- #access -->
