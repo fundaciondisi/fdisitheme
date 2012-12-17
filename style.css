@@ -2503,6 +2503,10 @@ p.comment-form-comment {
 		visibility: hidden;
 	}
 
+	#searchform{
+		top:30px;
+	}
+
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	body {
@@ -2523,6 +2527,10 @@ p.comment-form-comment {
 	#imagencab{
 		display: none;
 		visibility: hidden;
+	}
+
+	#searchform{
+		top:30px;
 	}
 
 }
