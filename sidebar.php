@@ -18,7 +18,7 @@ if ( 'content' != $current_layout ) :
 					<ul>
 						<?php
 							global $post;
-							$args = array('category' => 4 );
+							$args = array('category' => get_cat_ID('Inicio') );
 							$myposts = get_posts( $args );
 							foreach( $myposts as $post ) :	setup_postdata($post); ?>
 							<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>

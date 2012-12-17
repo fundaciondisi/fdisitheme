@@ -57,14 +57,14 @@
 				<ul>
 					<?php
 					global $post;
-					$args = array('category' => 2 );
+					$args = array('category' =>  get_cat_ID('menu'));
 					$myposts = get_posts( $args );
 					foreach( $myposts as $post ) :	setup_postdata($post); ?>
 						<li class="current_page_item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 					<?php endforeach; ?>
 					<li class="current_page_item">
 						<?php
-							wp_list_categories('style=none&include=3');
+							wp_list_categories('style=none&include='.get_cat_ID('Noticias'));
 						?>
 					</li>
 				<?php /*	<li class="page_item page-item-2">
