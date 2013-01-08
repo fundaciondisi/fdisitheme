@@ -61,21 +61,21 @@
 					$args = array('category' =>  get_cat_ID('menu'));
 					$myposts = get_posts( $args );
 					foreach( $myposts as $post ) :	setup_postdata($post); ?>
-						<li class="current_page_item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+						<li class="current_page_item btn btn-info btn-mini"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 					<?php endforeach; ?>
 					<?php endif; ?>
 
 					<?php if(exite_categoria('Noticias')==1): ?>
-					<li class="current_page_item">
+					<li class="current_page_item btn btn-info btn-mini">
 						<?php
 							wp_list_categories('style=none&include='.get_cat_ID('Noticias'));
 						?>
 					</li>
 					<?php endif; ?>
-					<li class="page_item page-item">
+					<li class="page_item page-item btn btn-info btn-mini">
 						<a title="Cursos" href="<?php echo esc_url( home_url( '/moodle/' ) ); ?>">Cursos</a>
 					</li> 
-					<li class="page_item page-item">
+					<li class="page_item page-item btn btn-info btn-mini">
 						<a title="Wiki" href="<?php echo esc_url( home_url( '/wiki/' ) ); ?>">Wiki</a>
 					</li> 
 				</ul>
