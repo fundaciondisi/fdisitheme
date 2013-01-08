@@ -32,7 +32,7 @@
 						<?php do_action( 'twentyten_credits' ); ?> 
 						Sitio creado con la ayuda de <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyten' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyten' ); ?>" rel="generator"><?php printf( __( '%s.', 'twentyten' ), 'WordPress' ); ?></a>
 				</div>
-				<div id='errores' class='justificado'>
+				<div id='info' class='justificado'>
 					Cualquier fallo, error o sugerencia que encontréis podéis mandar un correo a <span style='font-weight:bold;'>cesarmc@fundaciondisi.com</span>, gracias!
 				</div>
 			</div>
