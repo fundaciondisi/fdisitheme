@@ -22,7 +22,7 @@ if ( 'content' != $current_layout ) :
 							$args = array('category' => get_cat_ID('Menu lateral') );
 							$myposts = get_posts( $args );
 							foreach( $myposts as $post ) :	setup_postdata($post); ?>
-							<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+							<li><a href="<?php the_permalink(); ?>" class="btn btn-mini"><?php the_title(); ?></a></li>
 						<?php endforeach; ?>
 					</ul>
 					<?php endif; ?>
